@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ListView fx:id="resultView" layoutX="10.0" layoutY="47.0" prefHeight="343.0" prefWidth="620.0">
+               <contextMenu>
+                  <ContextMenu fx:id="contextMenu">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#btnEditar" text="Editar" />
+                        <MenuItem mnemonicParsing="false" onAction="#btnExcluir" text="Excluir" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu></ListView>
+            <Text fx:id="textCount" layoutX="388.0" layoutY="35.0" opacity="0.7" strokeType="OUTSIDE" strokeWidth="0.0" text="Aproximadamente ... resultados." textAlignment="RIGHT" wrappingWidth="241.44580078125">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tfBanco" layoutX="10.0" layoutY="10.0" onAction="#btnFindBd" prefHeight="25.0" prefWidth="170.0" />
+            <Button fx:id="btnFindBd" layoutX="188.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnFindBd" text="Buscar no Banco" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

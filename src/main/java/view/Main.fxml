@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <TextField fx:id="listTf" layoutX="150.0" layoutY="184.0" prefHeight="27.0" prefWidth="340.0" />
+            <Button fx:id="findListBtn" alignment="CENTER" layoutX="191.0" layoutY="225.0" maxHeight="25.0" maxWidth="120.0" minHeight="25.0" minWidth="120.0" mnemonicParsing="false" onAction="#findListBtn" opacity="0.6" prefHeight="27.0" prefWidth="113.0" text="Pesquisa Food">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Button>
+            <Text fill="#150ef5" fontSmoothingType="LCD" layoutX="223.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F" wrappingWidth="27.439453125">
+               <font>
+                  <Font name="SansSerif Bold" size="55.0" />
+               </font>
+            </Text>
+            <Text fill="#f50f0f" fontSmoothingType="LCD" layoutX="255.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="o" wrappingWidth="27.439453125">
+               <font>
+                  <Font name="SansSerif Bold" size="55.0" />
+               </font>
+            </Text>
+            <Text fill="#faeb00" fontSmoothingType="LCD" layoutX="289.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="o" wrappingWidth="27.439453125">
+               <font>
+                  <Font name="SansSerif Bold" size="55.0" />
+               </font>
+            </Text>
+            <Text fill="#150ef5" fontSmoothingType="LCD" layoutX="324.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="d" wrappingWidth="27.439453125">
+               <font>
+                  <Font name="SansSerif Bold" size="55.0" />
+               </font>
+            </Text>
+            <Text fill="#03a800" fontSmoothingType="LCD" layoutX="359.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="i" wrappingWidth="27.439453125">
+               <font>
+                  <Font name="SansSerif Bold" size="55.0" />
+               </font>
+            </Text>
+            <Text fill="#f50f0f" fontSmoothingType="LCD" layoutX="376.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="s" wrappingWidth="27.439453125">
+               <font>
+                  <Font name="SansSerif Bold" size="55.0" />
+               </font>
+            </Text>
+            <Button fx:id="luckyListBtn" alignment="CENTER" layoutX="330.0" layoutY="225.0" maxHeight="25.0" maxWidth="120.0" minHeight="25.0" minWidth="120.0" mnemonicParsing="false" onAction="#luckyListBtn" opacity="0.6" prefHeight="27.0" prefWidth="113.0" text="Estou com Sorte">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Button>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
