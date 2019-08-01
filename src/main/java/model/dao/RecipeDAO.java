@@ -33,7 +33,7 @@ public class RecipeDAO extends ModelDAO {
 		RecipeDAO dao = new RecipeDAO();
 		final String cmdSqlTitle;
 
-		cmdSqlTitle = "AND title LIKE ('%" + title + "%')";
+		cmdSqlTitle = " AND title LIKE ('%" + title + "%')";
 		return ModelDAO.cast(dao.executeFindList(cmdSqlTitle, new Recipe()));
 	}
 

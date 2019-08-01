@@ -44,7 +44,9 @@ public class MainController {
 
 	@FXML
 	public void findListBtn(ActionEvent event) throws Exception {
-		// service.updateBd(list);
+		String crua = listTf.getText();
+		String[] list = crua.split(" ");
+		service.updateBd(list);
 		System.out.println("API ACESSADA!!!!");
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/List.fxml"));
 		VBox root = loader.load();

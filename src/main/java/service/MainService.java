@@ -3,12 +3,13 @@ package service;
 import java.util.List;
 
 import model.Recipe;
-import util.Util;
+import util.WebApiThread;
 
 public class MainService {
 
 	public void updateBd(String[] textField) throws Exception {
-		Util.updateList(textField);
+		WebApiThread t = new WebApiThread(textField);
+		t.start();
 	}
 
 	public List<Recipe> findList(String[] textField) throws Exception {

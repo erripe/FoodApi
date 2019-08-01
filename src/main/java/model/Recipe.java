@@ -12,7 +12,7 @@ import org.hibernate.annotations.Table;
 
 import javafx.scene.control.Hyperlink;
 import model.dao.RecipeDAO;
-import util.Util;
+import util.WebApiThread;
 
 @Entity
 @Table(appliesTo = "Recipe")
@@ -46,7 +46,8 @@ public class Recipe extends Model {
 	}
 
 	public static void updateList(String[] textField) throws Exception {
-		Util.updateList(textField);
+		WebApiThread t = new WebApiThread(textField);
+		t.start();
 	}
 
 	public static Recipe findById(Long codRecipe) throws Exception {
